@@ -1,0 +1,101 @@
+# Project information
+site_name: "Amarjit Dhillon's Blog"
+site_description: 'A persanal blog of Amarjit Singh Dhillon'
+site_author: 'Amarjit Singh Dhillon'
+site_url: 'https://www.amarjitdhillon.com'
+
+# Repository
+repo_name: 'odd-snail/www.amarjitdhillon.com'
+# repo_url: 'https://github.com/odd-snail/www.amarjitdhillon.com'
+
+# Copyright
+copyright: 'Copyright &copy; 2019  Amarjit Dhillon'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'blue'
+    accent: 'red'
+  font:
+    # text: 'Palatino'
+    # code: 'Palatino'
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/amarjitdhillon/'
+    # - type: 'twitter'
+    #   link: 'https://twitter.com/smartsplash'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/webdexter/'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/Amar.314/'
+    # - type: 'instagram'
+    #   link: 'https://instagram.com/graphcms'
+
+extra_css:
+  - 'stylesheets/extra.css'
+       
+# # Google Analytics
+# google_analytics:
+#   - 'UA-XXXXXXXX-X'
+#   - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+      noclasses: false
+      pygments_style: vim
+      # monokai, rrt ,colorful , vim
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+disqus: 'amardhillon'
+
+
+nav:
+  - "NodeJS": 
+    - "Initial Setup": "NodeJS/hostInaccessible.md"
+  - "Installing Flink": "installing_flink/flink.md"
+  - "Resume": "Resume/index.md"
+  - "Wget": "wget/wget.md"
+  - "WSO2": 
+    - "Install H2": "wso2/h2/index.md"
+    - "Setup JMS": "wso2/jms/index.md"
+  - "Linux": 
+    - "Setting Java Home": "linux/java_home/index.md"
+    - "Setting andoid device": "linux/android_device.md"
+  - "Maven": 
+    - "Downgrading maven": "maven/downgrade_maven/index.md"
+  - "MySQL": 
+    - "Initial Setup": "mysql/mysql_basics.md"
+
+
+
+
+
