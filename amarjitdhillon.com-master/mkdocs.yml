@@ -2,11 +2,12 @@
 site_name: "Amarjit Dhillon's Blog"
 site_description: 'A persanal blog of Amarjit Singh Dhillon'
 site_author: 'Amarjit Singh Dhillon'
-site_url: 'https://www.amarjitdhillon.com'
+site_url: 'http://www.amarjitdhillon.com'
+site_favicon: img/favicon.ico
 
 # Repository
-repo_name: 'odd-snail/www.amarjitdhillon.com'
-# repo_url: 'https://github.com/odd-snail/www.amarjitdhillon.com'
+repo_name: 'amarjitdhillon/www.amarjitdhillon.com'
+repo_url: 'https://github.com/amarjitdhillon'
 
 # Copyright
 copyright: 'Copyright &copy; 2019  Amarjit Dhillon'
@@ -14,18 +15,22 @@ copyright: 'Copyright &copy; 2019  Amarjit Dhillon'
 # Configuration
 theme:
   name: 'material'
+  custom_dir: 'custom_theme/'
   language: 'en'
+  logo: 'res/logo.png' # logo image which is shown at top nav-bar
+  favicon: 'res/logo.png'  
+  feature:
+    tabs: false
   palette:
     primary: 'blue'
     accent: 'red'
   font:
-    # text: 'Palatino'
-    # code: 'Palatino'
     text: 'Roboto'
     code: 'Roboto Mono'
 
 # Customization
 extra:
+  disqus: 'amarjitdhillon'
   manifest: 'manifest.webmanifest'
   social:
     - type: 'github'
@@ -41,11 +46,16 @@ extra:
 
 extra_css:
   - 'stylesheets/extra.css'
-       
-# # Google Analytics
-# google_analytics:
-#   - 'UA-XXXXXXXX-X'
-#   - 'auto'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'  
+
+
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
 
 # Extensions
 markdown_extensions:
@@ -55,6 +65,7 @@ markdown_extensions:
       use_pygments: true
       noclasses: false
       pygments_style: vim
+      # linenums: true
       # monokai, rrt ,colorful , vim
   - toc:
       permalink: true
@@ -75,25 +86,27 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-disqus: 'amardhillon'
+
 
 
 nav:
   - "NodeJS": 
-    - "Initial Setup": "NodeJS/hostInaccessible.md"
-  - "Installing Flink": "installing_flink/flink.md"
-  - "Resume": "Resume/index.md"
-  - "Wget": "wget/wget.md"
+    - "Registery settings": "NodeJS/hostInaccessible.md"
+  - "Big data":
+    - "Installing Flink": "installing_flink/flink.md"
   - "WSO2": 
     - "Install H2": "wso2/h2/index.md"
     - "Setup JMS": "wso2/jms/index.md"
   - "Linux": 
     - "Setting Java Home": "linux/java_home/index.md"
     - "Setting andoid device": "linux/android_device.md"
+    - "Wget": "linux/wget.md"
   - "Maven": 
     - "Downgrading maven": "maven/downgrade_maven/index.md"
   - "MySQL": 
     - "Initial Setup": "mysql/mysql_basics.md"
+  - "Resume": "resources/resume.pdf"
+  - "Thesis": "resources/thesis.pdf"
 
 
 

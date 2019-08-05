@@ -1,7 +1,7 @@
-## Not able to install the packages and getting the error like
+# NPM registery settings
 
-!!! warn ""
-	 WARN registry Using stale data from http://yourHostName because the host is inaccessible -- are you offline?
+???+ tip "Warning"
+	 WARN: registry Using stale data from http://yourHostName because the host is inaccessible -- are you offline?
 
 This happens when you might be using proxy to get the packages. Steps to solve this issue are.
 
